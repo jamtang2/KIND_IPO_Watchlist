@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-07-01T22:24:09.428132+09:00",
+  "last_updated": "2026-07-01T22:52:59.305095+09:00",
   "companies": [
     {
       "corp_name": "싸이몬",
@@ -921,6 +921,1604 @@
     }
   ],
   "archived": [
+    {
+      "corp_name": "아이나비시스템즈",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-04-23",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2025-07-22",
+      "expire_date": "2025-08-21",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "하나35호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-04-24",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-06-24",
+      "expire_date": "2025-07-24",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "삼성스팩10호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-04-25",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-06-27",
+      "expire_date": "2025-07-27",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "명인제약",
+      "market": "유가증권",
+      "listing_type": "신규상장",
+      "apply_date": "2025-04-30",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-07-31",
+      "expire_date": "2025-08-30",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "큐리오시스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-04-30",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-07-08",
+      "expire_date": "2025-08-07",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "리브스메드",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-05-07",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-10-13",
+      "expire_date": "2025-11-12",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "아크릴",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-05-09",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-09-18",
+      "expire_date": "2025-10-18",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "테라뷰",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-05-16",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-08-19",
+      "expire_date": "2025-09-18",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "노타",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-05-22",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-07-29",
+      "expire_date": "2025-08-28",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "(주)이노테크",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-05-28",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-08-19",
+      "expire_date": "2025-09-18",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "엔에이치스팩32호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-05-28",
+      "status_raw": "상장철회",
+      "status_display": "상장철회",
+      "status_color": "gray",
+      "result_date": "2025-07-16",
+      "expire_date": "2025-08-15",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "닷",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-05-29",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2025-08-12",
+      "expire_date": "2025-09-11",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "더핑크퐁컴퍼니",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-05-29",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-09-19",
+      "expire_date": "2025-10-19",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "엘에스이",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-06-02",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2025-09-19",
+      "expire_date": "2025-10-19",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "페스카로",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-06-09",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-09-25",
+      "expire_date": "2025-10-25",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "세레신",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-06-10",
+      "status_raw": "심사미승인",
+      "status_display": "심사미승인",
+      "status_color": "red",
+      "result_date": "2025-12-10",
+      "expire_date": "2026-01-09",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사미승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "세나테크놀로지",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-06-18",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-09-03",
+      "expire_date": "2025-10-03",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "키움히어로제1호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-06-19",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-07-28",
+      "expire_date": "2025-08-27",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "비엔케이제3호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-06-24",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-08-25",
+      "expire_date": "2025-09-24",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "KB제33호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-06-26",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-08-22",
+      "expire_date": "2025-09-21",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "삼성스팩11호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-06-26",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-08-22",
+      "expire_date": "2025-09-21",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "삼진식품",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-06-26",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-10-30",
+      "expire_date": "2025-11-29",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "에스팀",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-06-27",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-01-16",
+      "expire_date": "2026-02-15",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "나라스페이스테크놀로지",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-06-30",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-09-19",
+      "expire_date": "2025-10-19",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "대신밸류리츠",
+      "market": "유가증권",
+      "listing_type": "신규상장",
+      "apply_date": "2025-06-30",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-07-02",
+      "expire_date": "2025-08-01",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "코스메카코리아",
+      "market": "유가증권",
+      "listing_type": "이전상장",
+      "apply_date": "2025-06-30",
+      "status_raw": "심사미승인",
+      "status_display": "심사미승인",
+      "status_color": "red",
+      "result_date": "2025-09-01",
+      "expire_date": "2025-10-01",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사미승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "리센스메디컬",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-02",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-12-29",
+      "expire_date": "2026-01-28",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "그린광학",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-11",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-09-09",
+      "expire_date": "2025-10-09",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "카네비모빌리티",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-11",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2025-08-26",
+      "expire_date": "2025-09-25",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "카인사이언스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-11",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2025-10-17",
+      "expire_date": "2025-11-16",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "쿼드메디슨",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-15",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-09-26",
+      "expire_date": "2025-10-26",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "티엠씨",
+      "market": "유가증권",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-15",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-10-02",
+      "expire_date": "2025-11-01",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "세미파이브",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-17",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-09-30",
+      "expire_date": "2025-10-30",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "인벤테라",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-17",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-12-24",
+      "expire_date": "2026-01-23",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "채비",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-21",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-02-27",
+      "expire_date": "2026-03-29",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "씨엠티엑스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-24",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-09-26",
+      "expire_date": "2025-10-26",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "에임드바이오",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-24",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-09-19",
+      "expire_date": "2025-10-19",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "알지노믹스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-25",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-09-19",
+      "expire_date": "2025-10-19",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "인투코어테크놀로지",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-25",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2025-11-28",
+      "expire_date": "2025-12-28",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "메리츠제1호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-30",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2025-10-02",
+      "expire_date": "2025-11-01",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "서울로보틱스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-07-31",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2025-12-26",
+      "expire_date": "2026-01-25",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "덕양에너젠",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-08-04",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-11-06",
+      "expire_date": "2025-12-06",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "신영스팩11호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-08-08",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-09-26",
+      "expire_date": "2025-10-26",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "티케이씨",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-08-12",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2025-10-30",
+      "expire_date": "2025-11-29",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "한컴인스페이스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-08-13",
+      "status_raw": "심사미승인",
+      "status_display": "심사미승인",
+      "status_color": "red",
+      "result_date": "2026-02-05",
+      "expire_date": "2026-03-07",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사미승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "미래에셋비전스팩8호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-08-20",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-10-02",
+      "expire_date": "2025-11-01",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "에이텍솔루션",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-08-22",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2025-10-17",
+      "expire_date": "2025-11-16",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "삼성스팩12호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-08-25",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-10-14",
+      "expire_date": "2025-11-13",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "미래에셋비전스팩9호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-08-26",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-10-20",
+      "expire_date": "2025-11-19",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "엔에이치스팩32호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-08-28",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-10-21",
+      "expire_date": "2025-11-20",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "교보19호기업인수목적",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-08-29",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-10-27",
+      "expire_date": "2025-11-26",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "미래에셋비전스팩10호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-08-29",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2025-10-31",
+      "expire_date": "2025-11-30",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "크몽",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-08-29",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2026-01-28",
+      "expire_date": "2026-02-27",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "미래에셋비전스팩11호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-09-08",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-10-29",
+      "expire_date": "2025-11-28",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "IBKS제25호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-09-10",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-11-11",
+      "expire_date": "2025-12-11",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "하나36호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-09-11",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-11-05",
+      "expire_date": "2025-12-05",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "한패스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-09-11",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-01-29",
+      "expire_date": "2026-02-28",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "코스모로보틱스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-09-12",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-12-24",
+      "expire_date": "2026-01-23",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "액스비스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-09-18",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-12-15",
+      "expire_date": "2026-01-14",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "유진스팩12호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-09-18",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-10-27",
+      "expire_date": "2025-11-26",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "삼성스팩13호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-09-30",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2025-10-29",
+      "expire_date": "2025-11-28",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "메쥬",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-10-01",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-12-18",
+      "expire_date": "2026-01-17",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "메리츠제1호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-10-10",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-10-17",
+      "expire_date": "2025-11-16",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "카나프테라퓨틱스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-10-17",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-12-18",
+      "expire_date": "2026-01-17",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "아이엠바이오로직스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-10-28",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-01-16",
+      "expire_date": "2026-02-15",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "삼성스팩13호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-10-30",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-11-13",
+      "expire_date": "2025-12-13",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "스트라드비젼",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-10-30",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-04-02",
+      "expire_date": "2026-05-02",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "미래에셋비전스팩10호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-04",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2025-11-12",
+      "expire_date": "2025-12-12",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "유빅스테라퓨틱스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-04",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2026-03-17",
+      "expire_date": "2026-04-16",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "코드잇",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-06",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2026-03-16",
+      "expire_date": "2026-04-15",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "에식스솔루션즈",
+      "market": "유가증권",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-07",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2026-01-26",
+      "expire_date": "2026-02-25",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "져스텍",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-07",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-04-02",
+      "expire_date": "2026-05-02",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "케이뱅크",
+      "market": "유가증권",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-10",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-01-12",
+      "expire_date": "2026-02-11",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "레몬헬스케어",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-12",
+      "status_raw": "심사승인",
+      "status_display": "심사승인",
+      "status_color": "green",
+      "result_date": "2026-03-26",
+      "expire_date": "2026-04-25",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "디토닉",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-13",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2026-04-30",
+      "expire_date": "2026-05-30",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "마키나락스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-17",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-02-27",
+      "expire_date": "2026-03-29",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "신한제17호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-21",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-01-19",
+      "expire_date": "2026-02-18",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "엔에이치스팩33호",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-21",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-01-20",
+      "expire_date": "2026-02-19",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "신한제18호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-24",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-01-22",
+      "expire_date": "2026-02-21",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "한화플러스제6호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-24",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2026-01-27",
+      "expire_date": "2026-02-26",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "폴레드",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-26",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-03-26",
+      "expire_date": "2026-04-25",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "매드업",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-11-28",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-04-09",
+      "expire_date": "2026-05-09",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "교보20호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-12-01",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-02-02",
+      "expire_date": "2026-03-04",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "메타넷엑스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-12-09",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2026-04-20",
+      "expire_date": "2026-05-20",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
+    {
+      "corp_name": "키움히어로제2호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-12-11",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-02-10",
+      "expire_date": "2026-03-12",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "빅웨이브로보틱스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-12-16",
+      "status_raw": "심사승인",
+      "status_display": "심사승인",
+      "status_color": "green",
+      "result_date": "2026-04-23",
+      "expire_date": "2026-05-23",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "피스피스스튜디오",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2025-12-17",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-03-26",
+      "expire_date": "2026-04-25",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "케이앤에스아이앤씨",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2026-01-16",
+      "status_raw": "심사승인",
+      "status_display": "심사승인",
+      "status_color": "green",
+      "result_date": "2026-05-07",
+      "expire_date": "2026-06-06",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "대신밸런스제20호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2026-01-23",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-03-30",
+      "expire_date": "2026-04-29",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "레메디",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2026-01-30",
+      "status_raw": "심사승인",
+      "status_display": "심사승인",
+      "status_color": "green",
+      "result_date": "2026-05-07",
+      "expire_date": "2026-06-06",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "인제니아테라퓨틱스",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2026-01-30",
+      "status_raw": "심사승인",
+      "status_display": "심사승인",
+      "status_color": "green",
+      "result_date": "2026-05-21",
+      "expire_date": "2026-06-20",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "메리츠제2호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2026-03-04",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-04-27",
+      "expire_date": "2026-05-27",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "한국제16호스팩",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2026-03-20",
+      "status_raw": "상장승인",
+      "status_display": "상장승인",
+      "status_color": "green",
+      "result_date": "2026-05-20",
+      "expire_date": "2026-06-19",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "상장승인"
+        }
+      ]
+    },
+    {
+      "corp_name": "제이피이노베이션",
+      "market": "코스닥",
+      "listing_type": "신규상장",
+      "apply_date": "2026-03-25",
+      "status_raw": "심사철회",
+      "status_display": "심사철회",
+      "status_color": "yellow",
+      "result_date": "2026-05-29",
+      "expire_date": "2026-06-28",
+      "history": [
+        {
+          "date": "2026-07-01",
+          "status": "심사철회"
+        }
+      ]
+    },
     {
       "corp_name": "아이나비시스템즈",
       "market": "코스닥",
