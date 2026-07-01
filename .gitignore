@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.pyo
+.env
+data/response_sample.html
+data/KIND_sample.xlsx
+scripts/__pycache__/

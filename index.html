@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KIND 상장예비심사 현황</title>
+<style>
+:root {
+  --bg: #f8f9fa;
+  --card-bg: #ffffff;
+  --border: #e2e8f0;
+  --text: #1a202c;
+  --text-muted: #718096;
+  --primary: #3b82f6;
+  --green: #16a34a;
+  --green-bg: #dcfce7;
+  --red: #dc2626;
+  --red-bg: #fee2e2;
+  --yellow: #ca8a04;
+  --yellow-bg: #fef9c3;
+  --gray: #6b7280;
+  --gray-bg: #f3f4f6;
+  --neutral: #3b82f6;
+  --neutral-bg: #eff6ff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Noto Sans KR", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+}
+header {
+  background: var(--card-bg);
+  border-bottom: 1px solid var(--border);
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header h1 { font-size: 18px; font-weight: 700; }
+header p  { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+.main { max-width: 1280px; margin: 0 auto; padding: 24px 16px; }
+
+/* 요약 카드 */
+.summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 12px;
+  margin-bottom: 20px;
+}
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+.card .label { font-size: 12px; color: var(--text-muted); margin-bottom: 4px; }
+.card .value { font-size: 28px; font-weight: 700; }
+.card.green .value { color: var(--green); }
+.card.red   .value { color: var(--red); }
+.card.yellow .value { color: var(--yellow); }
+.card.blue  .value { color: var(--primary); }
+
+/* 필터 바 */
+.filters {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 14px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+.filters label { font-size: 12px; color: var(--text-muted); margin-right: 4px; }
+.filters select, .filters input[type=text] {
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 13px;
+  background: var(--bg);
+  color: var(--text);
+}
+.toggle-group { display: flex; gap: 4px; }
+.toggle-btn {
+  padding: 5px 12px;
+  border: 1px solid var(--border);
+  background: var(--bg);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+.toggle-btn.active {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #fff;
+}
+.count-info { margin-left: auto; font-size: 12px; color: var(--text-muted); }
+
+/* 테이블 */
+.table-wrap {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+table { width: 100%; border-collapse: collapse; }
+th {
+  background: var(--bg);
+  padding: 10px 14px;
+  text-align: left;
+  font-size: 12px;
+  color: var(--text-muted);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+th:hover { color: var(--primary); }
+th .sort-icon { font-size: 10px; margin-left: 4px; opacity: 0.5; }
+th.sorted .sort-icon { opacity: 1; color: var(--primary); }
+td {
+  padding: 10px 14px;
+  border-bottom: 1px solid var(--border);
+  vertical-align: middle;
+}
+tr:last-child td { border-bottom: none; }
+tr:hover td { background: #fafafa; }
+.corp-name { font-weight: 600; }
+.badge {
+  display: inline-block;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+.badge.green   { background: var(--green-bg);   color: var(--green); }
+.badge.red     { background: var(--red-bg);     color: var(--red); }
+.badge.yellow  { background: var(--yellow-bg);  color: var(--yellow); }
+.badge.gray    { background: var(--gray-bg);    color: var(--gray); }
+.badge.neutral { background: var(--neutral-bg); color: var(--neutral); }
+
+.elapsed { font-weight: 600; }
+.elapsed.warn { color: var(--red); }
+
+.empty { text-align: center; padding: 48px; color: var(--text-muted); }
+
+/* 반응형 */
+@media (max-width: 768px) {
+  th, td { padding: 8px 10px; font-size: 12px; }
+  .col-market, .col-underwriter { display: none; }
+}
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <h1>KIND 상장예비심사 현황 대시보드</h1>
+    <p id="last-updated">데이터 로딩 중...</p>
+  </div>
+  <a href="https://kind.krx.co.kr/listinvstg/listinvstgcom.do?method=searchListInvstgCorpMain"
+     target="_blank" rel="noopener"
+     style="font-size:12px;color:var(--primary);text-decoration:none;">
+    ▶ KIND 원본 바로가기
+  </a>
+</header>
+
+<div class="main">
+  <!-- 요약 카드 -->
+  <div class="summary">
+    <div class="card blue">
+      <div class="label">진행중</div>
+      <div class="value" id="cnt-pending">—</div>
+    </div>
+    <div class="card green">
+      <div class="label">심사승인</div>
+      <div class="value" id="cnt-approved">—</div>
+    </div>
+    <div class="card red">
+      <div class="label">심사미승인</div>
+      <div class="value" id="cnt-rejected">—</div>
+    </div>
+    <div class="card yellow">
+      <div class="label">심사철회</div>
+      <div class="value" id="cnt-withdrawn">—</div>
+    </div>
+    <div class="card">
+      <div class="label">기타 확정</div>
+      <div class="value" id="cnt-other">—</div>
+    </div>
+  </div>
+
+  <!-- 필터 바 -->
+  <div class="filters">
+    <div>
+      <label>시장구분</label>
+      <select id="filter-market">
+        <option value="">전체</option>
+        <option value="유가증권">유가증권</option>
+        <option value="코스닥">코스닥</option>
+      </select>
+    </div>
+    <div>
+      <label>상장유형</label>
+      <select id="filter-listing">
+        <option value="">전체</option>
+        <option value="신규상장">신규상장</option>
+        <option value="이전상장">이전상장</option>
+      </select>
+    </div>
+    <div>
+      <label>표시</label>
+      <div class="toggle-group">
+        <button class="toggle-btn active" data-mode="active">진행중만</button>
+        <button class="toggle-btn" data-mode="all">전체</button>
+      </div>
+    </div>
+    <div>
+      <label>검색</label>
+      <input type="text" id="filter-search" placeholder="회사명 검색...">
+    </div>
+    <span class="count-info" id="row-count"></span>
+  </div>
+
+  <!-- 테이블 -->
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr>
+          <th data-sort="corp_name">회사명 <span class="sort-icon">▲▼</span></th>
+          <th class="col-market" data-sort="market">시장 <span class="sort-icon">▲▼</span></th>
+          <th data-sort="listing_type">상장유형 <span class="sort-icon">▲▼</span></th>
+          <th data-sort="apply_date">청구일 <span class="sort-icon">▲▼</span></th>
+          <th data-sort="elapsed" class="sorted">경과일 <span class="sort-icon">▼</span></th>
+          <th data-sort="status_raw">심사현황 <span class="sort-icon">▲▼</span></th>
+          <th data-sort="result_date">결과확정일 <span class="sort-icon">▲▼</span></th>
+        </tr>
+      </thead>
+      <tbody id="tbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+let allData = [];
+let sortKey = 'elapsed';
+let sortAsc = false;
+let filterMode = 'active';
+
+async function loadData() {
+  const resp = await fetch('data/companies.json');
+  const json = await resp.json();
+  allData = json.companies || [];
+
+  const lu = json.last_updated;
+  document.getElementById('last-updated').textContent = lu
+    ? `최종 갱신: ${new Date(lu).toLocaleString('ko-KR', {timeZone:'Asia/Seoul'})}`
+    : '갱신 정보 없음';
+
+  updateSummary();
+  render();
+}
+
+function elapsedDays(applyDate) {
+  const today = new Date();
+  today.setHours(0,0,0,0);
+  const d = new Date(applyDate);
+  return Math.floor((today - d) / 86400000);
+}
+
+function updateSummary() {
+  const counts = { pending:0, approved:0, rejected:0, withdrawn:0, other:0 };
+  for (const c of allData) {
+    if      (c.status_raw === '청구서접수') counts.pending++;
+    else if (c.status_raw === '심사승인')  counts.approved++;
+    else if (c.status_raw === '심사미승인') counts.rejected++;
+    else if (c.status_raw === '심사철회')  counts.withdrawn++;
+    else                                    counts.other++;
+  }
+  document.getElementById('cnt-pending').textContent  = counts.pending;
+  document.getElementById('cnt-approved').textContent = counts.approved;
+  document.getElementById('cnt-rejected').textContent = counts.rejected;
+  document.getElementById('cnt-withdrawn').textContent = counts.withdrawn;
+  document.getElementById('cnt-other').textContent    = counts.other;
+}
+
+function getFiltered() {
+  const market  = document.getElementById('filter-market').value;
+  const listing = document.getElementById('filter-listing').value;
+  const search  = document.getElementById('filter-search').value.trim().toLowerCase();
+
+  return allData.filter(c => {
+    if (filterMode === 'active' && c.status_raw !== '청구서접수') return false;
+    if (market  && c.market       !== market)  return false;
+    if (listing && c.listing_type !== listing) return false;
+    if (search  && !c.corp_name.toLowerCase().includes(search)) return false;
+    return true;
+  });
+}
+
+function sortData(rows) {
+  return [...rows].sort((a, b) => {
+    let va, vb;
+    if (sortKey === 'elapsed') {
+      va = elapsedDays(a.apply_date);
+      vb = elapsedDays(b.apply_date);
+    } else {
+      va = (a[sortKey] || '').toString();
+      vb = (b[sortKey] || '').toString();
+    }
+    if (va < vb) return sortAsc ? -1 : 1;
+    if (va > vb) return sortAsc ?  1 : -1;
+    return 0;
+  });
+}
+
+const WARN_DAYS = 45; // 45일 초과 시 경고 강조
+const COLOR_MAP = {
+  neutral: '진행중', green: '심사승인', red: '심사미승인',
+  yellow: '심사철회', gray: '기타'
+};
+
+function render() {
+  const rows = sortData(getFiltered());
+  const tbody = document.getElementById('tbody');
+  document.getElementById('row-count').textContent = `${rows.length}개`;
+
+  if (!rows.length) {
+    tbody.innerHTML = '<tr><td colspan="7" class="empty">해당하는 기업이 없습니다</td></tr>';
+    return;
+  }
+
+  tbody.innerHTML = rows.map(c => {
+    const elapsed = elapsedDays(c.apply_date);
+    const warnClass = elapsed >= WARN_DAYS ? ' warn' : '';
+    const badge = `<span class="badge ${c.status_color}">${c.status_display}</span>`;
+    const resultDate = c.result_date
+      ? `<span style="font-size:12px">${c.result_date}</span>`
+      : '—';
+    return `<tr>
+      <td class="corp-name">${c.corp_name}</td>
+      <td class="col-market" style="font-size:12px;color:var(--text-muted)">${c.market}</td>
+      <td style="font-size:12px">${c.listing_type}</td>
+      <td style="font-size:12px">${c.apply_date}</td>
+      <td class="elapsed${warnClass}">D+${elapsed}${elapsed >= WARN_DAYS ? ' ⚠' : ''}</td>
+      <td>${badge}</td>
+      <td>${resultDate}</td>
+    </tr>`;
+  }).join('');
+}
+
+// 이벤트 바인딩
+document.querySelectorAll('[data-mode]').forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterMode = btn.dataset.mode;
+    document.querySelectorAll('[data-mode]').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    render();
+  });
+});
+
+document.querySelectorAll('th[data-sort]').forEach(th => {
+  th.addEventListener('click', () => {
+    const key = th.dataset.sort;
+    if (sortKey === key) { sortAsc = !sortAsc; }
+    else { sortKey = key; sortAsc = key !== 'elapsed'; }
+    document.querySelectorAll('th').forEach(t => { t.classList.remove('sorted'); t.querySelector('.sort-icon').textContent = '▲▼'; });
+    th.classList.add('sorted');
+    th.querySelector('.sort-icon').textContent = sortAsc ? '▲' : '▼';
+    render();
+  });
+});
+
+['filter-market','filter-listing','filter-search'].forEach(id => {
+  document.getElementById(id).addEventListener('input', render);
+});
+
+loadData().catch(e => {
+  document.getElementById('last-updated').textContent = '데이터 로드 실패: ' + e.message;
+});
+</script>
+</body>
+</html>
