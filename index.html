@@ -295,6 +295,7 @@ function getFiltered() {
   const search  = document.getElementById('filter-search').value.trim().toLowerCase();
 
   return allData.filter(c => {
+    if (c.corp_name.includes('스팩') || c.corp_name.includes('기업인수목적')) return false;
     if (filterMode === 'active' && c.status_raw !== '청구서접수') return false;
     if (market  && c.market       !== market)  return false;
     if (listing && c.listing_type !== listing) return false;

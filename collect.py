@@ -176,6 +176,10 @@ def _parse_page(html: str) -> list[dict]:
         if not corp_name or not apply_date:
             continue
 
+        # 스팩(SPAC) 및 기업인수목적회사 제외
+        if "스팩" in corp_name or "기업인수목적" in corp_name:
+            continue
+
         rows.append({
             "market": market,
             "corp_name": corp_name,
