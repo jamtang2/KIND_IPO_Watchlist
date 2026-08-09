@@ -7,6 +7,7 @@ KIND 상장예비심사 현황 수집기
 import json
 import logging
 import sys
+import time
 import requests
 from bs4 import BeautifulSoup
 from datetime import datetime, date, timedelta, timezone
@@ -73,6 +74,11 @@ def save_data(data: dict) -> None:
 
 
 # ── KIND API 호출 ──────────────────────────────────────────────────────────────
+def _key(row: dict) -> str:
+    """(회사명, 청구일) 복합키"""
+    return f"{row['corp_name']}|{row['apply_date']}"
+
+
 def _build_payload(page_index: int, from_date: str, to_date: str) -> list[tuple]:
     base = [
         ("method", "searchListInvstgCorpSub"),
@@ -122,19 +128,26 @@ def scrape_kind() -> list[dict]:
     log.info(f"KIND 조회: {from_date} ~ {to_date}")
     session = _make_session()
     all_rows: list[dict] = []
+    seen_keys: set[str] = set()
 
-    for page in range(1, 50):  # 최대 50페이지(5,000건) 안전 상한
+    for page in range(1, 100):  # 최대 100페이지 안전 상한
         payload = _build_payload(page, from_date, to_date)
         resp = session.post(BASE_URL, data=payload, timeout=30)
         resp.raise_for_status()
         resp.encoding = "UTF-8"
 
         rows = _parse_page(resp.text)
-        log.info(f"  페이지 {page}: {len(rows)}개 행")
-        all_rows.extend(rows)
+        # 마지막 페이지를 넘어가면 서버가 빈 페이지 대신 직전 페이지를
+        # 그대로 반복 응답하므로, 신규 키 유무로 종료 여부를 판단한다.
+        new_rows = [r for r in rows if _key(r) not in seen_keys]
+        log.info(f"  페이지 {page}: {len(rows)}개 행 (신규 {len(new_rows)}개)")
 
-        if len(rows) < PAGE_SIZE:
+        if not new_rows:
             break
+        for r in new_rows:
+            seen_keys.add(_key(r))
+        all_rows.extend(new_rows)
+        time.sleep(0.5)  # 과도한 연속 요청으로 인한 차단(403) 방지
 
     log.info(f"총 {len(all_rows)}개 기업 수집")
     return all_rows
@@ -203,11 +216,6 @@ def _map_status(status_raw: str) -> tuple[str, str, str]:
 
 
 # ── diff / 업데이트 ────────────────────────────────────────────────────────────
-def _key(row: dict) -> str:
-    """(회사명, 청구일) 복합키"""
-    return f"{row['corp_name']}|{row['apply_date']}"
-
-
 def diff_and_update(stored: dict, fresh_rows: list[dict]) -> dict:
     """기존 데이터와 새 스크래핑 결과를 병합"""
     today = today_kst()
